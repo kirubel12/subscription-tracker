@@ -3,7 +3,9 @@ import {Router} from "express";
 const userRouter = Router();
 
 userRouter.get("/", (req, res) => {
-    res.send("Get all users")
+    res.json({
+        "message": "get all user"
+    })
 });
 
 userRouter.get("/:id", (req, res) => {
